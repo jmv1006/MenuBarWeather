@@ -8,7 +8,7 @@ import Foundation
 // MARK: - CityWeatherResponse
 struct CityWeatherResponse: Codable {
     var name: String = ""
-    var state: String = ""
+    var state: String? = nil
     var icon: String = ""
     let latitude, longitude: Double
     let elevation: Int

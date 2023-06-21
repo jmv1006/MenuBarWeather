@@ -9,8 +9,11 @@ import SwiftUI
 
 @main
 struct MenuBarWeatherApp: App {
+    @StateObject var userDefaultsService: UserDefaultsService = UserDefaultsService()
+    
     @AppStorage("defaultCity") var defaultCity: String = "Los Angeles"
     @State var currentCityWeatherData: CityWeatherResponse? = nil
+    @State var savedCities: [String]? = []
     
     var body: some Scene {
         Settings {
@@ -34,3 +37,22 @@ struct MenuBarWeatherApp: App {
         })
     }
 }
+
+/*
+ func handleSavedCities(action: String) {
+     switch action {
+         case "set":
+             userDefaults.set(savedCities, forKey: "savedCities")
+         case "get":
+             let defaultsCities: [String]? = userDefaults.array(forKey: "savedCities") as? [String]
+             if(defaultsCities != nil) {
+                 savedCities = defaultsCities!
+             }
+         case "delete":
+             UserDefaults.standard.removeObject(forKey: "savedCities")
+             savedCities = [String]()
+         default:
+             return
+     }
+ }
+ */

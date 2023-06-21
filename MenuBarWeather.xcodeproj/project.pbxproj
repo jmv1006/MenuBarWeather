@@ -21,6 +21,7 @@
 		366C1A7B2A3E2F970047AC7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366C1A7A2A3E2F970047AC7D /* Preview Assets.xcassets */; };
 		368EC7CD2A415AA4007BE049 /* WeatherIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368EC7CC2A415AA4007BE049 /* WeatherIcons.swift */; };
 		368EC7CF2A4163A0007BE049 /* SettingWindowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368EC7CE2A4163A0007BE049 /* SettingWindowViewModel.swift */; };
+		368EC7D12A42BB9A007BE049 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368EC7D02A42BB9A007BE049 /* UserDefaultsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		366C1A7C2A3E2F970047AC7D /* MenuBarWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarWeather.entitlements; sourceTree = "<group>"; };
 		368EC7CC2A415AA4007BE049 /* WeatherIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcons.swift; sourceTree = "<group>"; };
 		368EC7CE2A4163A0007BE049 /* SettingWindowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingWindowViewModel.swift; sourceTree = "<group>"; };
+		368EC7D02A42BB9A007BE049 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				36083C542A3E359B0016A412 /* API_Services.swift */,
+				368EC7D02A42BB9A007BE049 /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				366C1A742A3E2F960047AC7D /* MenuBarWeatherApp.swift in Sources */,
 				36083C592A3FD65B0016A412 /* GeoCoordinateCity.swift in Sources */,
 				3605B5E92A41137C008B1FD0 /* SettingsWindowView.swift in Sources */,
+				368EC7D12A42BB9A007BE049 /* UserDefaultsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
